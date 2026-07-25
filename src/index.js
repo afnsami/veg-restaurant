@@ -1,5 +1,6 @@
 // IMPORT
 import "./styles.css";
+import { pageload } from "./pageload.js";
 import mainImage from "./resource/images/main.jpg";
 
 
