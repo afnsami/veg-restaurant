@@ -66,9 +66,6 @@ introTextDiv.appendChild(div1);
 introTextDiv.appendChild(div2);
 content.appendChild(introTextDiv);
 
-pageload();
-
-
 
 // HOME BUTTON
 const home = document.getElementById('home');
