@@ -115,7 +115,3 @@ about.addEventListener('click', function(e) {
 
     content.innerHTML = '';
 });
-
-function tabSwitch() {
-
-};
