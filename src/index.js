@@ -1,6 +1,6 @@
 // IMPORT
 import "./styles.css";
-import { pageload } from "./pageload.js";
+import { menuTab, aboutTab } from "./pageload.js";
 import mainImage from "./resource/images/main.jpg";
 
 
@@ -39,7 +39,7 @@ div1.appendChild(div1h1);
 
 const div1ul = document.createElement('ul');
 const dishMenu = document.createElement('p');
-dishMenu.innerHTML = "Natural vegetables and fruits <br> Natural ingredients <br> Less oil <br> Healthy <br> <span style='color: green'>$</span>5-10 each item";
+dishMenu.innerHTML = "Natural vegetables and fruits <br> Natural ingredients <br> Less oil <br> Healthy <br> <span style='color: green'>$</span>1-5 each item";
 div1ul.appendChild(dishMenu);
 div1.appendChild(div1ul);
 
@@ -65,3 +65,57 @@ content.appendChild(introImageDiv);
 introTextDiv.appendChild(div1);
 introTextDiv.appendChild(div2);
 content.appendChild(introTextDiv);
+
+pageload();
+
+
+
+// HOME BUTTON
+const home = document.getElementById('home');
+home.style.backgroundColor = 'brown';
+home.style.color = 'white';
+
+home.addEventListener('click', function(e) {
+    menu.style = null;
+    about.style = null;
+    home.style.backgroundColor = 'brown';
+    home.style.color = 'white';
+
+    content.innerHTML = '';
+
+    introImageDiv.appendChild(introImage);
+    content.appendChild(introImageDiv);
+
+    introTextDiv.appendChild(div1);
+    introTextDiv.appendChild(div2);
+    content.appendChild(introTextDiv);
+});
+
+
+// MENU BUTTON
+const menu = document.getElementById('menu');
+menu.addEventListener('click', function(e) {
+    home.style = null;
+    about.style = null;
+    menu.style.backgroundColor = 'brown';
+    menu.style.color = 'white';
+    content.style.backgroundColor = 'brown';
+
+    content.innerHTML = '';
+    menuTab();
+});
+
+// ABOUT BUTTON
+const about = document.getElementById('about');
+about.addEventListener('click', function(e) {
+    home.style = null;
+    menu.style = null;
+    about.style.backgroundColor = 'brown';
+    about.style.color = 'white';
+
+    content.innerHTML = '';
+});
+
+function tabSwitch() {
+
+};
