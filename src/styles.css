@@ -123,6 +123,25 @@ button:hover {
     margin-top: 30px;
 }
 
+/* ABOUT */
+.aboutDiv {
+    width: 72%;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: burlywood;
+}
+
+.aboutDiv p {
+    font-size: 30px;
+}
+
+.detailsDiv {
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 39px;
+    color: orange;
+}
+
 @media (max-width: 700px) {
     
 }
