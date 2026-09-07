@@ -109,6 +109,8 @@ about.addEventListener('click', function(e) {
     menu.style = null;
     about.style.backgroundColor = 'brown';
     about.style.color = 'white';
+    content.style.backgroundColor = 'brown';
 
     content.innerHTML = '';
+    aboutTab();
 });
