@@ -1,10 +1,7 @@
 
 
 
-
 function menuTab() {
-    console.log("menu");
-
     const menuDiv = document.createElement('div');
     menuDiv.className = 'menuDiv';
 
@@ -24,12 +21,39 @@ function menuTab() {
     menuDiv.appendChild(h1);
     menuDiv.appendChild(p);
     document.getElementById("content").appendChild(menuDiv);
-
 };
 
 function aboutTab() {
+    const aboutDiv = document.createElement('div');
+    aboutDiv.className = 'aboutDiv';
+
+    const historyP = document.createElement('p');
+    historyP.textContent = "We are a neighborhood restaurant inspired by the warmth of Indian dining. We bring together fresh ingredients, comforting flavors, and a relaxed atmosphere to create food that feels familiar yet special. Whether you're joining us for a quick lunch, a dinner with friends, or a special evening, our goal is simple: good food, good company, and a table waiting for you.";
 
 
+
+    const detailsDiv = document.createElement('div');
+    detailsDiv.className = 'detailsDiv';
+
+    const location = document.createElement('p');
+    location.textContent = '99 Park Street, London, United Kingdom';
+
+    const email = document.createElement('p');
+    email.textContent = 'vegrestaurent@email.com';
+
+    const phone = document.createElement('p');
+    phone.textContent = '+123456789';
+
+
+
+    aboutDiv.appendChild(historyP);
+
+    detailsDiv.appendChild(location);
+    detailsDiv.appendChild(email);
+    detailsDiv.appendChild(phone);
+    
+    document.getElementById('content').appendChild(aboutDiv);
+    document.getElementById('content').appendChild(detailsDiv);
 };
 
 export { menuTab, aboutTab };
