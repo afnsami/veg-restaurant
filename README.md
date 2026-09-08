@@ -1,4 +1,4 @@
-# Veg Restaurent
+# Veg Restaurant
 ## Live Preview <a href="https://afnsami.github.io/veg-restaurant">HERE</a>
 
 <img src="src/resource/images/preview.png">
